@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e7A-86-6em">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Verify phone demo-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwiftVerification" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUp-OH-vQF">
+                                <rect key="frame" x="16" y="72" width="568" height="30"/>
+                                <state key="normal" title="Verify phone">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zq6-xm-dci" kind="show" id="a73-Yz-ZOH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oUp-OH-vQF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="2Hh-ac-3at"/>
+                            <constraint firstItem="oUp-OH-vQF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="7Ta-U3-uc4"/>
+                            <constraint firstItem="oUp-OH-vQF" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="oPp-yK-Nr1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Verify phone demo" id="tjz-ho-wUQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="418"/>
+        </scene>
+        <!--Enter Phonenumber-->
+        <scene sceneID="ywm-ng-fvn">
+            <objects>
+                <viewController title="Enter Phonenumber" id="zq6-xm-dci" customClass="EnterPhoneNumberViewController" customModule="SwiftVerification" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bP8-X1-rh5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ffq-lS-xEv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cRa-vm-wdb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter phonenumber" textAlignment="center" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="gTp-4j-CAs">
+                                <rect key="frame" x="16" y="102" width="568" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gTp-4j-CAs" firstAttribute="trailing" secondItem="cRa-vm-wdb" secondAttribute="trailingMargin" id="C3l-JL-ICD"/>
+                            <constraint firstItem="gTp-4j-CAs" firstAttribute="top" secondItem="bP8-X1-rh5" secondAttribute="bottom" constant="8" symbolic="YES" id="PSP-5g-ZgV"/>
+                            <constraint firstItem="gTp-4j-CAs" firstAttribute="leading" secondItem="cRa-vm-wdb" secondAttribute="leadingMargin" id="cOG-0j-Zk6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Tig-i9-CfJ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="WTL-l7-bNL"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="C4p-YO-VQ6">
+                            <connections>
+                                <action selector="startVerification:" destination="zq6-xm-dci" id="KrK-y6-q8O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="phoneNumber" destination="gTp-4j-CAs" id="sX2-oU-FmQ"/>
+                        <segue destination="KHL-hI-Wft" kind="show" identifier="verifySeg" id="JUS-Cq-7dc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fpP-Rp-6QO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1779" y="418"/>
+        </scene>
+        <!--Check you sms-->
+        <scene sceneID="bFV-dn-eAg">
+            <objects>
+                <viewController id="KHL-hI-Wft" customClass="VerifyCodeViewController" customModule="SwiftVerification" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yz9-ev-qGS"/>
+                        <viewControllerLayoutGuide type="bottom" id="qoW-Ku-Rco"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2YP-oU-a3u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uJd-yJ-4Ce">
+                                <rect key="frame" x="16" y="72" width="568" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uJd-yJ-4Ce" firstAttribute="top" secondItem="Yz9-ev-qGS" secondAttribute="bottom" constant="8" symbolic="YES" id="Yn2-Kd-oQo"/>
+                            <constraint firstItem="uJd-yJ-4Ce" firstAttribute="trailing" secondItem="2YP-oU-a3u" secondAttribute="trailingMargin" id="a2f-Bu-Izp"/>
+                            <constraint firstItem="uJd-yJ-4Ce" firstAttribute="leading" secondItem="2YP-oU-a3u" secondAttribute="leadingMargin" id="xnt-PR-gde"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Check you sms" id="23I-zH-NFH">
+                        <barButtonItem key="rightBarButtonItem" title="Verify" id="hTd-uB-V8H">
+                            <connections>
+                                <action selector="verifyCode:" destination="KHL-hI-Wft" id="Bte-Yq-cjk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="code" destination="uJd-yJ-4Ce" id="CzH-o3-1Jv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvd-Iz-bAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2436" y="418"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6cO-1a-UZf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e7A-86-6em" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wkF-qZ-T1T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="kuu-0i-gv8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2OY-Wj-qec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="1079"/>
+        </scene>
+    </scenes>
+</document>
