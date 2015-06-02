@@ -14,7 +14,7 @@ Why would you use our SDK instead of rolling it your self as we have showed in p
 - [C#/web ](https://www.sinch.com/tutorials/build-two-factor-authentication-system-pt-3/)
 - [Build your own magic one touch login](https://www.sinch.com/tutorials/build-authenticator-app-sinch-otp-sharp/)
 
-We provide some good value with our cloud SDK
+## We provide some good value with our cloud SDK
 1. We take care of the logic of retires
 2. We automatically block spam numbers
 3. We make sure retries are handled in a correct way (we believe).
@@ -22,10 +22,18 @@ We provide some good value with our cloud SDK
 5. Support for multiple ways of authentication (Just for android now, but shortly arriving for iOS)
 6. Super low cost since you don't need to rent any numbers by on your own. 
 
-Lets stop talking and do some coding; 
+Lets stop talking and do some coding;
+ 
 1. Create and account at http://sinch.com/signup
 2. Create an app, and change enable verification (set it to public for now) ![](images/configureapp.png)
 3. Head over to  [https://github.com/sinch/ios-swift-verification]() to download the bits.
+
+<table>
+<tr>
+<td><img src="images/app1.png"></td>
+<td><img src="images/app2.png"></td>
+</tr>
+</table>
 
 The important bits to look at from a verification perspective in this app are two, in *EnterPhoneNumberViewController.swift* 
 

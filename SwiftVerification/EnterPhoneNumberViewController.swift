@@ -31,7 +31,7 @@ class EnterPhoneNumberViewController: UIViewController {
         self.phoneNumber.becomeFirstResponder();
     }
     @IBAction func startVerification(sender: AnyObject) {
-        self.verification = SMSVerification(applicationKey:"<yourkey>", phoneNumber: phoneNumber.text)
+        self.verification = SMSVerification(applicationKey:"<your key>", phoneNumber: phoneNumber.text)
         
         self.verification!.initiate { (success: Bool, error: NSError?) -> Void in
             if (success)
