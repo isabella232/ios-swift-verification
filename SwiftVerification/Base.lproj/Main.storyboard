@@ -52,7 +52,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter phonenumber" textAlignment="center" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="gTp-4j-CAs">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="enter phonenumber" textAlignment="center" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="gTp-4j-CAs">
                                 <rect key="frame" x="16" y="102" width="568" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad"/>
@@ -82,7 +82,7 @@
             </objects>
             <point key="canvasLocation" x="1779" y="418"/>
         </scene>
-        <!--Check you sms-->
+        <!--Wait for SMS-->
         <scene sceneID="bFV-dn-eAg">
             <objects>
                 <viewController id="KHL-hI-Wft" customClass="VerifyCodeViewController" customModule="SwiftVerification" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,7 +107,7 @@
                             <constraint firstItem="uJd-yJ-4Ce" firstAttribute="leading" secondItem="2YP-oU-a3u" secondAttribute="leadingMargin" id="xnt-PR-gde"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Check you sms" id="23I-zH-NFH">
+                    <navigationItem key="navigationItem" title="Wait for SMS" id="23I-zH-NFH">
                         <barButtonItem key="rightBarButtonItem" title="Verify" id="hTd-uB-V8H">
                             <connections>
                                 <action selector="verifyCode:" destination="KHL-hI-Wft" id="Bte-Yq-cjk"/>
