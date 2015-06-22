@@ -2,7 +2,7 @@
 
 We have recently made our first Swift SDK available for the [Sinch Verification product range](https://www.sinch.com/products/verification/). Before we dig in to the Swift parts, lets talk about verification and why you would want to do that. 
 
-Our Verification product enables you to be sure that a user is in possession of a phone number by relying on the on regular phone network to either send an SMS or making a call. 
+Our Verification product enables you to be sure that a user is in possession of a phone number by relying on the regular phone network to either send an SMS or by making a call. 
 
 Why would you use our SDK instead of rolling it yourself as we have showed in previous tutorials? 
 
@@ -30,7 +30,7 @@ Lets stop talking and do some coding!
 
 ![screenshots](images/screenshots2.jpg)
 
-The important bits to look at from a verification perspective in this app are two, in *EnterPhoneNumberViewController.swift* 
+There are some important bits to look at from a verification perspective in this app. One is the *EnterPhoneNumberViewController.swift* function:
 
 ```swift
 @IBAction func startVerification(sender: AnyObject) {
