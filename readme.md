@@ -1,4 +1,4 @@
-# Introducing our Verification Swift SDK
+# Verify Phone Numbers with the Swift SDK
 
 We have recently made our first Swift SDK available for the [Sinch Verification product range](https://www.sinch.com/products/verification/). Before we dig in to the Swift parts, lets talk about verification and why you would want to do that. 
 
