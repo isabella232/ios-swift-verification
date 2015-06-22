@@ -28,7 +28,7 @@ Lets stop talking and do some coding!
 ![enable verification](images/configureapp.png)
 3. Head over to [https://github.com/sinch/ios-swift-verification](https://github.com/sinch/ios-swift-verification) to download the repo.
 
-![screenshots](images/screenshots.jpg)
+![screenshots](images/screenshots2.jpg)
 
 The important bits to look at from a verification perspective in this app are two, in *EnterPhoneNumberViewController.swift* 
 
