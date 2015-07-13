@@ -47,7 +47,7 @@ There are some important bits to look at from a verification perspective in this
         }
     }
 ```
-This function initiates an SMS verification request to the specified phone number (from the *viewcontroller*) and straight away gives you an indication if it’s on its way. In this case, I display an *EnterCodeViewController* and prompt the user to enter the code received in the SMS. 
+This function initiates an [SMS verification request](https://www.sinch.com/products/verification/sms-verification/) to the specified phone number (from the *viewcontroller*) and straight away gives you an indication if it’s on its way. In this case, I display an *EnterCodeViewController* and prompt the user to enter the code received in the SMS. 
 
 ```swift
 @IBAction func verifyCode(sender: AnyObject) {
