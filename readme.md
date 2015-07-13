@@ -12,7 +12,7 @@ Why would you use our SDK instead of rolling it yourself as we have showed in pr
 - [Build your own magic one touch login](https://www.sinch.com/tutorials/build-authenticator-app-sinch-otp-sharp/)
 
 ## We provide some good value with our cloud SDK
-1. We take care of the logic of retires
+1. We take care of the logic of re-tries
 2. We automatically block spam numbers
 3. We make sure re-tries are handled in a correct way
 4. Easy to use from you mobile app, and just two simple callbacks to your backend to notify you about statuses of a verification.
