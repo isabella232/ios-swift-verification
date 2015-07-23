@@ -6,7 +6,7 @@ Our Verification product enables you to be sure that a user is in possession of 
 
 Why would you use our SDK instead of rolling it yourself as we have showed in previous tutorials? 
 
-- [Rails/Android](https://www.sinch.com/tutorials/two-factor-authentication-rails/)
+- [Rails/Android Authentication](https://www.sinch.com/tutorials/ruby-on-rails-authentication/)
 - [C#/iOS](https://www.sinch.com/tutorials/build-two-authentication-system/)
 - [C#/Web](https://www.sinch.com/tutorials/build-two-factor-authentication-system-pt-3/)
 - [Build your own magic one touch login](https://www.sinch.com/tutorials/build-authenticator-app-sinch-otp-sharp/)
