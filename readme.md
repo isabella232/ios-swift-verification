@@ -1,30 +1,30 @@
-# Verify Phone Numbers with the Swift SDK
+# Verify Phone Numbers With the Swift SDK
 
-We have recently made our first Swift SDK available for the [Sinch Verification product range](https://www.sinch.com/products/verification/). Before we dig in to the Swift parts, lets talk about verification and why you would want to do that. 
+We recently made our first Swift SDK available for the [Sinch Verification product range](https://www.sinch.com/products/verification/). Before we dig into the Swift parts, let’s talk about verification and why you would want it. 
 
-Our Verification product enables you to be sure that a user is in possession of a phone number by relying on the regular phone network to either send an SMS or by making a call. 
+Our Verification product enables you to ensure that a user is in possession of a phone number by relying on the regular phone network to either send an SMS or make a call. 
 
 Why would you use our SDK instead of rolling it yourself as we have showed in previous tutorials? 
 
 - [Rails/Android Authentication](https://www.sinch.com/tutorials/ruby-on-rails-authentication/)
 - [C#/iOS](https://www.sinch.com/tutorials/build-two-authentication-system/)
 - [C#/Web](https://www.sinch.com/tutorials/build-two-factor-authentication-system-pt-3/)
-- [Build your own magic one touch login](https://www.sinch.com/tutorials/build-authenticator-app-sinch-otp-sharp/)
+- [Build Your Own Magic One-Touch Login](https://www.sinch.com/tutorials/build-authenticator-app-sinch-otp-sharp/)
 
-## We provide some good value with our cloud SDK
+## We provide good value with our cloud SDK
 1. We take care of the logic of re-tries
 2. We automatically block spam numbers
 3. We make sure re-tries are handled in a correct way
-4. Easy to use from you mobile app, and just two simple callbacks to your backend to notify you about statuses of a verification.
-5. Support for multiple ways of authentication (Just for Android at the moment, but shortly arriving for iOS)
-6. Super low cost since you don't need to rent any numbers on your own. 
+4. We are easy to use from you mobile app and just two simple callbacks to your backend to notify you about statuses of a verification
+5. We support multiple ways of authentication (just for Android at the moment, but shortly arriving for iOS)
+6. We are low cost because you don't need to rent any numbers on your own
 
-Lets stop talking and do some coding!
+Let’s stop talking and do some coding!
 
 ## The code
  
 1. [Create an account](https://www.sinch.com/dashboard/#/signup)
-2. Create an app, and change enable verification (set it to public for now) 
+2. Create an app and change enable verification (set it to public for now) 
 ![enable verification](images/configureapp.png)
 3. Head over to [https://github.com/sinch/ios-swift-verification](https://github.com/sinch/ios-swift-verification) to download the repo.
 
@@ -68,6 +68,6 @@ This function initiates an [SMS verification request](https://www.sinch.com/prod
     }
 ```
 
-In this super simple sample app, I just pop to the root view controller, but it gives you an idea how simple it is to integrate. 
+In this simple sample app, I just pop to the root view controller, but you get an idea of how simple it is to integrate. 
 
 For more information about using our Swift SDK, read about our [verification product](https://www.sinch.com/docs/verification/ios/).
