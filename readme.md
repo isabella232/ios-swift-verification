@@ -1,5 +1,3 @@
-Writer’s note: *For the latest updates on mobile app security, make sure to check out our [Verification SDK] (https://www.sinch.com/products/verification/sms-verification/).*
-
 # Verify Phone Numbers With the Swift SDK
 
 We recently made our first Swift SDK available for the [Sinch Verification product range](https://www.sinch.com/products/verification/). Before we dig into the Swift parts, let’s talk about verification and why you would want it. 
