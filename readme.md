@@ -6,10 +6,11 @@ Our Verification product enables you to ensure that a user is in possession of a
 
 Why would you use our SDK instead of rolling it yourself as we have showed in previous tutorials? 
 
-- [Rails/Android Authentication](https://www.sinch.com/tutorials/ruby-on-rails-authentication/)
-- [C#/iOS](https://www.sinch.com/tutorials/building-a-c-authentication-system-with-net/)
+- [Rails/Android Authentication](https://www.sinch.com/tutorials/ruby-on-rails-authentication/?utm_source=sinch&utm_medium=xlink&utm_campaign=verifytfrubyandroid1sinch)
+- [C#/iOS](https://www.sinch.com/tutorials/building-a-c-authentication-system-with-net/?utm_source=sinch&utm_medium=xlink&utm_campaign=verifyauthcsharp1sinch)
 - [C#/Web](https://www.sinch.com/tutorials/build-two-factor-authentication-system-pt-3/)
-- [Build Your Own Magic One-Touch Login](https://www.sinch.com/tutorials/build-authenticator-app-sinch-otp-sharp/)
+- [Build Your Own Magic One-Touch Login](https://www.sinch.com/tutorials/build-authenticator-app-sinch-otp-sharp/?utm_source=sinch&utm_medium=xlink&utm_campaign=verifyauthcsharp4sinch)
+-[More Verification Tutorials](https://www.sinch.com/tutorials/?tags%5B%5D=verification&utm_source=sinch&utm_medium=xlink&utm_campaign=verifyall)
 
 ## We provide good value with our cloud SDK
 1. We take care of the logic of re-tries
